@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Performance Metadata -->
+    <title>Pravinth N | AI Engineer & Developer</title>
+    <meta name="description" content="Personal portfolio of Pravinth N, an Information Technology student passionate about Artificial Intelligence, Python development, and Full-Stack Engineering.">
+    <meta name="keywords" content="Pravinth N, AI Engineer, Python Developer, Full-Stack Developer, StudyMate AI, CredBridge AI, Hindusthan College of Arts and Science, Coimbatore, Portfolio">
+    <meta name="author" content="Pravinth N">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Pravinth N | AI Engineer & Developer">
+    <meta property="og:description" content="Personal portfolio of Pravinth N, an Information Technology student passionate about Artificial Intelligence, Python development, and Full-Stack Engineering.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://pravinthpravinth040-cpu.github.io/">
+
+    <!-- Favicon (SVG) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Subtle Background AI Particle Canvas -->
+    <canvas id="particlesCanvas" class="particles-bg" aria-hidden="true"></canvas>
+
+    <!-- Ambient Glow Lighting -->
+    <div class="ambient-glow glow-cyan" aria-hidden="true"></div>
+    <div class="ambient-glow glow-blue" aria-hidden="true"></div>
+
+    <!-- Mouse Spotlight Effect -->
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer" role="status" aria-live="polite"></div>
+
+    <!-- Navigation Header -->
+    <header class="site-header" id="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo" aria-label="Pravinth N Homepage">
+                <span class="logo-symbol">&lt;</span><span class="logo-name">Pravinth</span><span class="logo-role">.ai</span><span class="logo-symbol">/&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#resume" class="nav-link">Resume</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button (Dark / Light) -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark and Light Mode" title="Toggle theme">
+                    <span class="theme-icon-sun" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    </span>
+                    <span class="theme-icon-moon" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    </span>
+                </button>
+
+                <!-- Ambient Coding Music Toggle Button -->
+                <button class="nav-music-pill" id="navMusicPill" title="Play / Pause Ambient Music" aria-label="Toggle Ambient Music">
+                    <span class="music-icon-note">🎵</span>
+                    <span class="music-pill-text" id="navMusicText">Play Music</span>
+                </button>
+
+                <a href="#contact" class="btn btn-sm btn-primary nav-contact-btn">Let's Connect</a>
+
+                <!-- Mobile Navigation Toggle -->
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- 3. Homepage / Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-status-pill">
+                        <span class="status-pulse-dot"></span>
+                        <span class="status-text">Available for AI Engineer & Developer Internships</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        PRAVINTH N
+                    </h1>
+
+                    <h2 class="hero-headline">
+                        <span class="text-gradient">AI Engineer</span> <span class="divider">|</span> Python Developer <span class="divider">|</span> Full-Stack Developer
+                    </h2>
+
+                    <div class="hero-role-typing">
+                        <span class="typing-label">Engineering: </span>
+                        <span class="typing-output" id="typingText"></span>
+                        <span class="typing-cursor">|</span>
+                    </div>
+
+                    <p class="hero-intro">
+                        Hi, I'm Pravinth N, an Information Technology student passionate about Artificial Intelligence, software engineering, and building innovative digital solutions.
+                    </p>
+                    <p class="hero-intro sub-intro">
+                        I enjoy developing AI-powered applications, exploring machine learning technologies, and creating modern web applications. I'm continuously learning, experimenting with new technologies, and building projects that solve real-world problems.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore My Projects</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 13 12 18 17 13"></polyline><line x1="12" y1="6" x2="12" y2="18"></line></svg>
+                        </a>
+                        <a href="assets/Pravinth_N_Resume.pdf" download="Pravinth_N_Resume.pdf" class="btn btn-secondary" id="heroResumeBtn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            <span>Download Resume</span>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <span>Contact Me</span>
+                        </a>
+                    </div>
+
+                    <!-- Hero Social Links: Gmail, LinkedIn, GitHub with real URLs -->
+                    <div class="hero-social-strip">
+                        <span class="social-strip-label">Connect:</span>
+                        <div class="social-icons-group">
+                            <!-- GitHub Profile -->
+                            <a href="https://github.com/pravinthpravinth040-cpu" target="_blank" rel="noopener noreferrer" class="social-circle-link" aria-label="GitHub Profile" title="GitHub: pravinthpravinth040-cpu">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                            <!-- LinkedIn Profile -->
+                            <a href="https://www.linkedin.com/in/pravinth-n-a29592401/" target="_blank" rel="noopener noreferrer" class="social-circle-link" aria-label="LinkedIn Profile" title="LinkedIn: pravinth-n-a29592401">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </a>
+                            <!-- Gmail Clickable Mailto -->
+                            <a href="mailto:pravinthn008@gmail.com" class="social-circle-link" aria-label="Send Email to Pravinth N" title="Gmail: pravinthn008@gmail.com">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual / Profile Image -->
+                <div class="hero-visual">
+                    <div class="profile-card-wrapper">
+                        <div class="profile-aura"></div>
+                        <div class="profile-card">
+                            <img src="assets/avatar.jpg" alt="Pravinth N - AI Engineer & Full-Stack Developer" class="profile-img">
+                            <div class="profile-glass-tag">
+                                <div class="tag-meta">
+                                    <span class="tag-title">Pravinth N</span>
+                                    <span class="tag-sub">AI &bull; Python &bull; Full-Stack</span>
+                                </div>
+                                <span class="tag-badge">B.Sc. IT</span>
+                            </div>
+                        </div>
+
+                        <!-- Floating Tech Chips -->
+                        <div class="floating-tech-chip chip-ai">
+                            <span class="chip-indicator"></span>
+                            <span>AI & Agents</span>
+                        </div>
+                        <div class="floating-tech-chip chip-python">
+                            <span class="chip-indicator"></span>
+                            <span>Python / FastAPI</span>
+                        </div>
+                        <div class="floating-tech-chip chip-cloud">
+                            <span class="chip-indicator"></span>
+                            <span>React & Node</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. About Me Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-pill">About Me</span>
+                    <h2 class="section-heading">Curious Mind, Engineering Solutions</h2>
+                    <p class="section-desc">Building practical, high-impact digital applications with AI and modern software engineering.</p>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Bio Narrative Card -->
+                    <div class="about-narrative-card">
+                        <h3 class="narrative-heading">Hello, I'm <span class="text-gradient">Pravinth N</span></h3>
+                        <p class="narrative-text">
+                            I'm Pravinth N, a B.Sc. Information Technology student at Hindusthan College of Arts and Science, Coimbatore.
+                        </p>
+                        <p class="narrative-text">
+                            My technical interests include Artificial Intelligence, Machine Learning, Full-Stack Development, Python programming, and Cybersecurity.
+                        </p>
+                        <p class="narrative-text">
+                            I enjoy exploring emerging technologies, building practical applications, and continuously improving my technical knowledge. My goal is to become an AI Engineer and contribute to innovative technology solutions.
+                        </p>
+
+                        <div class="about-profile-tags">
+                            <div class="profile-tag-item">
+                                <span class="tag-key">Location:</span>
+                                <span class="tag-val">Coimbatore, Tamil Nadu, India</span>
+                            </div>
+                            <div class="profile-tag-item">
+                                <span class="tag-key">Education:</span>
+                                <span class="tag-val">B.Sc. Information Technology</span>
+                            </div>
+                            <div class="profile-tag-item">
+                                <span class="tag-key">Graduation Year:</span>
+                                <span class="tag-val">2028 (2nd Year Student)</span>
+                            </div>
+                            <div class="profile-tag-item">
+                                <span class="tag-key">Career Objective:</span>
+                                <span class="tag-val text-accent">AI Engineer Internship</span>
+                            </div>
+                        </div>
+
+                        <div class="about-action-btns">
+                            <a href="#contact" class="btn btn-primary">Connect With Me</a>
+                            <a href="#resume" class="btn btn-secondary">Review Resume</a>
+                        </div>
+                    </div>
+
+                    <!-- Career & Technical Focus Area Cards -->
+                    <div class="about-interests-col">
+                        <div class="interest-card">
+                            <div class="interest-icon icon-ai">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-4 4 4 4 0 0 1-4-4V6a4 4 0 0 1 4-4z"></path><path d="M18 9v3a6 6 0 0 1-12 0V9"></path><line x1="12" y1="18" x2="12" y2="22"></line><line x1="8" y1="22" x2="16" y2="22"></line></svg>
+                            </div>
+                            <div class="interest-body">
+                                <h4>AI & Machine Learning</h4>
+                                <p>Building intelligent systems, fine-tuning LLM pipelines, and deploying autonomous AI Agents.</p>
+                            </div>
+                        </div>
+
+                        <div class="interest-card">
+                            <div class="interest-icon icon-python">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            </div>
+                            <div class="interest-body">
+                                <h4>Python & Backend Engineering</h4>
+                                <p>Developing high-throughput backend services using Python, FastAPI, Flask, and Node.js.</p>
+                            </div>
+                        </div>
+
+                        <div class="interest-card">
+                            <div class="interest-icon icon-web">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                            </div>
+                            <div class="interest-body">
+                                <h4>Full-Stack Web Development</h4>
+                                <p>Crafting accessible, dynamic web interfaces in React.js and modern responsive HTML5/CSS3.</p>
+                            </div>
+                        </div>
+
+                        <div class="interest-card">
+                            <div class="interest-icon icon-security">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            </div>
+                            <div class="interest-body">
+                                <h4>Cybersecurity & Data Privacy</h4>
+                                <p>Exploring vulnerability assessment, network security, and secure forensic data wiping workflows.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Technical Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-pill">Technical Toolkit</span>
+                    <h2 class="section-heading">Technical Skills</h2>
+                    <p class="section-desc">Technologies, frameworks, databases, and engineering principles in my workflow.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Programming Languages -->
+                    <div class="skill-category-card">
+                        <div class="cat-header">
+                            <div class="cat-icon-circle icon-cyan">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            </div>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <ul class="skill-chips-list">
+                            <li class="skill-chip">
+                                <span class="skill-title">Python</span>
+                                <span class="skill-badge primary">Primary</span>
+                            </li>
+                            <li class="skill-chip">
+                                <span class="skill-title">Java</span>
+                                <span class="skill-badge">Core</span>
+                            </li>
+                            <li class="skill-chip">
+                                <span class="skill-title">JavaScript</span>
+                                <span class="skill-badge">ES6+</span>
+                            </li>
+                            <li class="skill-chip">
+                                <span class="skill-title">SQL</span>
+                                <span class="skill-badge">Queries</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- AI / Machine Learning -->
+                    <div class="skill-category-card highlight-category">
+                        <div class="cat-header">
+                            <div class="cat-icon-circle icon-purple">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="12 6 15 11 11 11 13 18 9 13 13 13 12 6"></polygon></svg>
+                            </div>
+                            <h3>AI / Machine Learning</h3>
+                        </div>
+                        <ul class="skill-chips-list">
+                            <li class="skill-chip">
+                                <span class="skill-title">Scikit-learn</span>
+                                <span class="skill-badge">ML Models</span>
+                            </li>
+                            <li class="skill-chip">
+                                <span class="skill-title">TensorFlow</span>
+                                <span class="skill-badge">Deep Learning</span>
+                            </li>
+                            <li class="skill-chip">
+                                <span class="skill-title">LangChain</span>
+                                <span class="skill-badge primary">LLM Chains</span>
+                            </li>
+                            <li class="skill-chip">
+                                <span class="skill-title">Hugging Face</span>
+                                <span class="skill-badge">Transformers</span>
+                            </li>
+                            <li class="skill-chip">
+                                <span class="skill-title">NumPy &amp; Pandas</span>
+                                <span class="skill-badge">Data Analysis</span>
+                            </li>
+                            <li class="skill-chip">
+                                <span class="skill-title">Generative AI &amp; AI Agents</span>
+                                <span class="skill-badge primary">Exploration</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="skill-category-card">
+                        <div class="cat-header">
+                            <div class="cat-icon-circle icon-blue">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                            </div>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <ul class="skill-chips-list">
+                            <li class="skill-chip">
+                                <span class="skill-title">React.js</span>
+                                <span class="skill-badge primary">Components</span>
+                            </li>
+                            <li class="skill-chip">
+                                <span class="skill-title">HTML5</span>
+                                <span class="skill-badge">Semantic</span>
+                            </li>
+                            <li class="skill-chip">
+                                <span class="skill-title">CSS3</span>
+                                <span class="skill-badge">Modern UI</span>
+                            </li>
+                            <li class="skill-chip">
+                                <span class="skill-title">Responsive Web Design</span>
+                                <span class="skill-badge">Mobile First</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skill-category-card">
+                        <div class="cat-header">
+                            <div class="cat-icon-circle icon-emerald">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                            </div>
+                            <h3>Backend Development</h3>
+                        </div>
+                        <ul class="skill-chips-list">
+                            <li class="skill-chip">
+                                <span class="skill-title">Node.js</span>
+                                <span class="skill-badge">Runtime</span>
+                            </li>
+                            <li class="skill-chip">
+                                <span class="skill-title">Express.js</span>
+                                <span class="skill-badge">Server Framework</span>
+                            </li>
+                            <li class="skill-chip">
+                                <span class="skill-title">FastAPI</span>
+                                <span class="skill-badge primary">Python API</span>
+                            </li>
+                            <li class="skill-chip">
+                                <span class="skill-title">REST APIs</span>
+                                <span class="skill-badge">Architecture</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="skill-category-card">
+                        <div class="cat-header">
+                            <div class="cat-icon-circle icon-amber">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                            </div>
+                            <h3>Databases</h3>
+                        </div>
+                        <ul class="skill-chips-list">
+                            <li class="skill-chip">
+                                <span class="skill-title">PostgreSQL</span>
+                                <span class="skill-badge primary">Relational</span>
+                            </li>
+                            <li class="skill-chip">
+                                <span class="skill-title">MySQL</span>
+                                <span class="skill-badge">SQL</span>
+                            </li>
+                            <li class="skill-chip">
+                                <span class="skill-title">MongoDB</span>
+                                <span class="skill-badge">NoSQL</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- DevOps, Cloud & Cybersecurity -->
+                    <div class="skill-category-card">
+                        <div class="cat-header">
+                            <div class="cat-icon-circle icon-cyan">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            </div>
+                            <h3>DevOps, Cloud &amp; Security</h3>
+                        </div>
+                        <ul class="skill-chips-list">
+                            <li class="skill-chip">
+                                <span class="skill-title">Git &amp; GitHub</span>
+                                <span class="skill-badge">Version Control</span>
+                            </li>
+                            <li class="skill-chip">
+                                <span class="skill-title">Docker</span>
+                                <span class="skill-badge">Containers</span>
+                            </li>
+                            <li class="skill-chip">
+                                <span class="skill-title">AWS</span>
+                                <span class="skill-badge">Cloud Fundamentals</span>
+                            </li>
+                            <li class="skill-chip">
+                                <span class="skill-title">Network Security &amp; OWASP</span>
+                                <span class="skill-badge">Vulnerability Audit</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Projects Section (All 6 Specified Projects) -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-pill">Portfolio Showcase</span>
+                    <h2 class="section-heading">Featured Technical Projects</h2>
+                    <p class="section-desc">Practical software engineering projects spanning Artificial Intelligence, Full-Stack applications, and Cybersecurity.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- PROJECT 01 – STUDYMATE AI -->
+                    <article class="project-showcase-card flagship-card">
+                        <div class="card-img-container">
+                            <img src="assets/studymate.jpg" alt="StudyMate AI - AI Academic Assistant" class="project-screenshot" loading="lazy">
+                            <span class="category-pill-overlay">Artificial Intelligence</span>
+                        </div>
+                        <div class="card-details">
+                            <div class="project-meta-header">
+                                <h3 class="project-name">PROJECT 01 &mdash; STUDYMATE AI</h3>
+                                <span class="project-flag">AI Academic Assistant</span>
+                            </div>
+
+                            <p class="project-paragraph">
+                                An AI-powered academic assistant designed to help students understand educational topics, generate study plans, and answer academic questions.
+                            </p>
+
+                            <div class="project-feature-list">
+                                <span class="features-title">Key Features:</span>
+                                <ul>
+                                    <li>AI-powered question answering & concept explanations</li>
+                                    <li>Personalized study plan generation</li>
+                                    <li>Academic assistance for complex topics</li>
+                                    <li>Interactive terminal interface & conversational workflow</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-tech-stack">
+                                <span class="tech-pill">Python</span>
+                                <span class="tech-pill">Anthropic SDK</span>
+                                <span class="tech-pill">Claude API</span>
+                                <span class="tech-pill">NLP</span>
+                            </div>
+
+                            <div class="project-links-row">
+                                <a href="https://github.com/pravinthpravinth040-cpu/studymate-ai" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" title="GitHub Repository">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    <span>GitHub Repo</span>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-primary project-modal-trigger" data-title="StudyMate AI" data-desc="Academic tutoring and personalized study planning assistant built with Python and the Anthropic Claude API, offering students instant concept breakdowns and revision schedules.">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    <span>View Details</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 02 – PERSONAL PORTFOLIO -->
+                    <article class="project-showcase-card">
+                        <div class="card-img-container">
+                            <img src="assets/project3.jpg" alt="Pravinth N - Developer Portfolio Website" class="project-screenshot" loading="lazy">
+                            <span class="category-pill-overlay">Web Development</span>
+                        </div>
+                        <div class="card-details">
+                            <div class="project-meta-header">
+                                <h3 class="project-name">PROJECT 02 &mdash; PERSONAL PORTFOLIO</h3>
+                                <span class="project-flag">Live Production</span>
+                            </div>
+
+                            <p class="project-paragraph">
+                                A responsive personal portfolio website showcasing my technical skills, projects, education, and professional information.
+                            </p>
+
+                            <div class="project-feature-list">
+                                <span class="features-title">Key Features:</span>
+                                <ul>
+                                    <li>Dark and light mode with local persistence</li>
+                                    <li>Fully responsive design for all screen sizes</li>
+                                    <li>Smooth animations & subtle particle network</li>
+                                    <li>Interactive project showcase & contact section</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-tech-stack">
+                                <span class="tech-pill">HTML5</span>
+                                <span class="tech-pill">CSS3</span>
+                                <span class="tech-pill">JavaScript</span>
+                            </div>
+
+                            <div class="project-links-row">
+                                <a href="https://github.com/pravinthpravinth040-cpu" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" title="GitHub Repository">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    <span>GitHub Repo</span>
+                                </a>
+                                <a href="#home" class="btn btn-sm btn-primary">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    <span>Current Site</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 03 – TASK MANAGER WEB APPLICATION -->
+                    <article class="project-showcase-card">
+                        <div class="card-img-container">
+                            <img src="assets/taskmanager.jpg" alt="Task Manager Full-Stack Web Application" class="project-screenshot" loading="lazy">
+                            <span class="category-pill-overlay">Full-Stack Development</span>
+                        </div>
+                        <div class="card-details">
+                            <div class="project-meta-header">
+                                <h3 class="project-name">PROJECT 03 &mdash; TASK MANAGER APP</h3>
+                                <span class="project-flag">MERN Stack</span>
+                            </div>
+
+                            <p class="project-paragraph">
+                                A full-stack task management application designed to manage tasks efficiently with authentication and database integration.
+                            </p>
+
+                            <div class="project-feature-list">
+                                <span class="features-title">Key Features:</span>
+                                <ul>
+                                    <li>Create, update, and delete tasks</li>
+                                    <li>Secure user authentication (JWT / sessions)</li>
+                                    <li>Interactive Kanban task management dashboard</li>
+                                    <li>Real-time updates and activity metrics</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-tech-stack">
+                                <span class="tech-pill">React.js</span>
+                                <span class="tech-pill">Node.js</span>
+                                <span class="tech-pill">Express.js</span>
+                                <span class="tech-pill">MongoDB</span>
+                            </div>
+
+                            <div class="project-links-row">
+                                <a href="https://github.com/pravinthpravinth040-cpu/task-manager-app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" title="GitHub Repository">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    <span>GitHub Repo</span>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-primary project-modal-trigger" data-title="Task Manager Web Application" data-desc="Full-stack productivity workspace featuring user authentication, MongoDB data schemas, real-time status columns, and performance metrics.">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    <span>View Details</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 04 – CREDBRIDGE AI -->
+                    <article class="project-showcase-card">
+                        <div class="card-img-container">
+                            <img src="assets/credbridge.jpg" alt="CredBridge AI - Alternative Credit Assessment" class="project-screenshot" loading="lazy">
+                            <span class="category-pill-overlay">AI / FinTech</span>
+                        </div>
+                        <div class="card-details">
+                            <div class="project-meta-header">
+                                <h3 class="project-name">PROJECT 04 &mdash; CREDBRIDGE AI</h3>
+                                <span class="project-flag">FinTech AI</span>
+                            </div>
+
+                            <p class="project-paragraph">
+                                An alternative credit assessment platform designed to help small vendors demonstrate financial credibility through digital transaction history.
+                            </p>
+
+                            <div class="project-feature-list">
+                                <span class="features-title">Key Features:</span>
+                                <ul>
+                                    <li>AI-powered credit assessment & transaction analysis</li>
+                                    <li>Vendor consent management & consent withdrawal</li>
+                                    <li>Lender verification dashboard</li>
+                                    <li>Explainable assessment reports & cryptographic verification</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-tech-stack">
+                                <span class="tech-pill">Python</span>
+                                <span class="tech-pill">AI/ML</span>
+                                <span class="tech-pill">JavaScript</span>
+                                <span class="tech-pill">Supabase</span>
+                                <span class="tech-pill">PostgreSQL</span>
+                            </div>
+
+                            <div class="project-links-row">
+                                <a href="https://github.com/pravinthpravinth040-cpu/credbridge-ai" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" title="GitHub Repository">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    <span>GitHub Repo</span>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-primary project-modal-trigger" data-title="CredBridge AI Alternative Credit Scoring" data-desc="AI-driven platform empowering micro-vendors to prove financial trustworthiness through explainable machine learning models that analyze digital payment histories.">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    <span>View Details</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 05 – SPYDER EVENT WEBSITE -->
+                    <article class="project-showcase-card">
+                        <div class="card-img-container">
+                            <img src="assets/spyder.jpg" alt="SPYDER Event Website for Hindusthan College" class="project-screenshot" loading="lazy">
+                            <span class="category-pill-overlay">Web Development</span>
+                        </div>
+                        <div class="card-details">
+                            <div class="project-meta-header">
+                                <h3 class="project-name">PROJECT 05 &mdash; SPYDER EVENT WEBSITE</h3>
+                                <span class="project-flag">Symposium Portal</span>
+                            </div>
+
+                            <p class="project-paragraph">
+                                An event management and information website developed for the SPYDER Information Technology department event at Hindusthan College of Arts and Science.
+                            </p>
+
+                            <div class="project-feature-list">
+                                <span class="features-title">Key Features:</span>
+                                <ul>
+                                    <li>Event information & competition schedules</li>
+                                    <li>Online student registration interface</li>
+                                    <li>Participant management database</li>
+                                    <li>Responsive promotional layout</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-tech-stack">
+                                <span class="tech-pill">HTML</span>
+                                <span class="tech-pill">CSS</span>
+                                <span class="tech-pill">JavaScript</span>
+                                <span class="tech-pill">PHP</span>
+                                <span class="tech-pill">MySQL</span>
+                            </div>
+
+                            <div class="project-links-row">
+                                <a href="https://github.com/pravinthpravinth040-cpu/spyder-event-website" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" title="GitHub Repository">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    <span>GitHub Repo</span>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-primary project-modal-trigger" data-title="SPYDER Event Website" data-desc="Official department symposium portal engineered for Hindusthan College of Arts and Science with live registration pipelines and event schedule breakdowns.">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    <span>View Details</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 06 – GHOSTWIPE -->
+                    <article class="project-showcase-card">
+                        <div class="card-img-container">
+                            <img src="assets/ghostwipe.jpg" alt="GhostWipe - Cybersecurity Data Wiping System" class="project-screenshot" loading="lazy">
+                            <span class="category-pill-overlay">Cybersecurity</span>
+                        </div>
+                        <div class="card-details">
+                            <div class="project-meta-header">
+                                <h3 class="project-name">PROJECT 06 &mdash; GHOSTWIPE</h3>
+                                <span class="project-flag">Security Utility</span>
+                            </div>
+
+                            <p class="project-paragraph">
+                                A security-focused project exploring secure data deletion and protection of sensitive information.
+                            </p>
+
+                            <div class="project-feature-list">
+                                <span class="features-title">Key Features:</span>
+                                <ul>
+                                    <li>Secure data deletion concepts & overwrite passes</li>
+                                    <li>Confidential file & storage sector protection</li>
+                                    <li>Security-focused automated sanitization workflow</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-tech-stack">
+                                <span class="tech-pill">Python</span>
+                                <span class="tech-pill">Cryptography</span>
+                                <span class="tech-pill">Security Concepts</span>
+                                <span class="tech-pill">File System APIs</span>
+                            </div>
+
+                            <div class="project-links-row">
+                                <a href="https://github.com/pravinthpravinth040-cpu/ghostwipe" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" title="GitHub Repository">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    <span>GitHub Repo</span>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-primary project-modal-trigger" data-title="GhostWipe Data Protection" data-desc="Cybersecurity tool investigating forensic wiping algorithms, cryptographic multi-pass overwrite sequences, and verifiable storage sanitization.">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    <span>View Details</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Education Section -->
+        <section class="section education-section" id="education">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-pill">Academic Journey</span>
+                    <h2 class="section-heading">Education</h2>
+                    <p class="section-desc">My academic foundation in Information Technology.</p>
+                </div>
+
+                <div class="education-card-wrapper">
+                    <div class="education-card">
+                        <div class="edu-badge-strip">
+                            <span class="edu-status-tag">Currently Pursuing &bull; 2nd Year Student</span>
+                            <span class="edu-duration">2025 &ndash; 2028</span>
+                        </div>
+
+                        <div class="edu-header">
+                            <div class="edu-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                            </div>
+                            <div class="edu-titles">
+                                <h3 class="edu-degree">Bachelor of Science &ndash; Information Technology (B.Sc. IT)</h3>
+                                <h4 class="edu-institution">Hindusthan College of Arts and Science</h4>
+                                <p class="edu-location">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                    Coimbatore, Tamil Nadu, India
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="edu-body">
+                            <p class="edu-description">
+                                Focusing on computer science foundations, algorithm design, software engineering principles, database architecture, and advanced programming in Python, Java, and JavaScript.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Certifications Section (Dedicated) -->
+        <section class="section certifications-section" id="certifications">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-pill">Credentials &amp; Knowledge</span>
+                    <h2 class="section-heading">Certifications</h2>
+                    <p class="section-desc">Verified certifications and foundational training in key technical disciplines.</p>
+                </div>
+
+                <div class="certifications-grid">
+                    <div class="cert-card">
+                        <div class="cert-icon-circle icon-cyan">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                        </div>
+                        <div class="cert-content">
+                            <h3 class="cert-title">AI/ML Foundations Certification</h3>
+                            <p class="cert-subtitle">Machine Learning and AI Fundamentals</p>
+                            <span class="cert-badge">Verified Credential</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon-circle icon-purple">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <div class="cert-content">
+                            <h3 class="cert-title">Cybersecurity Foundations Certification</h3>
+                            <p class="cert-subtitle">Network Security and Ethical Hacking Basics</p>
+                            <span class="cert-badge">Verified Credential</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Services Section -->
+        <section class="section services-section" id="services">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-pill">What I Provide</span>
+                    <h2 class="section-heading">Services &amp; Offerings</h2>
+                    <p class="section-desc">Practical solutions across artificial intelligence, web development, and software engineering.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-box">
+                        <div class="service-icon-wrap">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="12 6 15 11 11 11 13 18 9 13 13 13 12 6"></polygon></svg>
+                        </div>
+                        <h3 class="service-box-title">AI Application Development</h3>
+                        <p class="service-box-text">Building AI-powered applications, fine-tuning API workflows, and deploying autonomous AI agent solutions.</p>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-icon-wrap">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <h3 class="service-box-title">Python Development</h3>
+                        <p class="service-box-text">Developing Python-based applications, automated scripting, and high-performance backend microservices.</p>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-icon-wrap">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        </div>
+                        <h3 class="service-box-title">Full-Stack Web Development</h3>
+                        <p class="service-box-text">Creating responsive and modern websites with seamless frontend interactivity and reliable backend architectures.</p>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-icon-wrap">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path></svg>
+                        </div>
+                        <h3 class="service-box-title">Responsive Website Design</h3>
+                        <p class="service-box-text">Creating clean, user-friendly, and accessible website interfaces tailored across smartphones, tablets, and desktops.</p>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-icon-wrap">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                        </div>
+                        <h3 class="service-box-title">Database Development</h3>
+                        <p class="service-box-text">Structuring relational (PostgreSQL, MySQL) and document-oriented databases (MongoDB) for reliability and scale.</p>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-icon-wrap">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                        <h3 class="service-box-title">Student Project Development</h3>
+                        <p class="service-box-text">Developing academic and practical software projects with clean modular architecture and complete documentation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Resume Section -->
+        <section class="section resume-section" id="resume">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-pill">Career Credentials</span>
+                    <h2 class="section-heading">Resume &amp; Profile Summary</h2>
+                    <p class="section-desc">A snapshot of my education, technical proficiencies, featured projects, and certifications.</p>
+                </div>
+
+                <div class="resume-card">
+                    <div class="resume-card-header">
+                        <div class="resume-profile-wrapper">
+                            <img src="assets/pravinth_photo.png" alt="Pravinth N - AI Engineer & Full-Stack Developer" class="resume-candidate-photo">
+                            <div class="resume-meta-text">
+                                <h3 class="resume-candidate-name">PRAVINTH N</h3>
+                                <p class="resume-candidate-role">AI Engineer | Python Developer | B.Sc. Information Technology</p>
+                                <p class="resume-candidate-location">Coimbatore, Tamil Nadu, India &bull; <a href="mailto:pravinthn008@gmail.com">pravinthn008@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="resume-actions-group">
+                            <a href="assets/Pravinth_N_Resume.pdf" download="Pravinth_N_Resume.pdf" class="btn btn-primary" id="downloadResumeBtn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                                <span>Download Resume (PDF)</span>
+                            </a>
+                            <a href="assets/Pravinth_N_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="viewResumeBtn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span>Open PDF Document</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="resume-preview-grid">
+                        <!-- Career Objective -->
+                        <div class="resume-block full-width-block">
+                            <h4 class="resume-block-title">CAREER OBJECTIVE</h4>
+                            <p class="resume-item-main">Passionate IT student seeking an AI Engineer Internship to apply skills in Artificial Intelligence, Python development, and scalable software solutions.</p>
+                        </div>
+
+                        <!-- Education -->
+                        <div class="resume-block full-width-block">
+                            <h4 class="resume-block-title">EDUCATION</h4>
+                            <p class="resume-item-main"><strong>B.Sc. Information Technology</strong> &bull; Hindusthan College of Arts and Science, Coimbatore</p>
+                            <p class="resume-item-sub">Duration: 2025 &ndash; 2028 | Current Status: 2nd Year Student</p>
+                        </div>
+
+                        <!-- Technical Skills -->
+                        <div class="resume-block full-width-block">
+                            <h4 class="resume-block-title">TECHNICAL SKILLS</h4>
+                            <div class="resume-skills-structured">
+                                <div class="skill-category-row">
+                                    <span class="skill-cat-name">Programming Languages:</span>
+                                    <span class="skill-cat-vals">Python, Java, C</span>
+                                </div>
+                                <div class="skill-category-row">
+                                    <span class="skill-cat-name">AI &amp; Emerging Tech:</span>
+                                    <span class="skill-cat-vals">Artificial Intelligence, Machine Learning, Generative AI, AI Agents</span>
+                                </div>
+                                <div class="skill-category-row">
+                                    <span class="skill-cat-name">Web Development:</span>
+                                    <span class="skill-cat-vals">HTML5, CSS3, JavaScript, Flask</span>
+                                </div>
+                                <div class="skill-category-row">
+                                    <span class="skill-cat-name">Databases:</span>
+                                    <span class="skill-cat-vals">MongoDB, PostgreSQL, Firebase, Supabase</span>
+                                </div>
+                                <div class="skill-category-row">
+                                    <span class="skill-cat-name">Tools:</span>
+                                    <span class="skill-cat-vals">Git, GitHub, VS Code, Figma</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Featured Projects -->
+                        <div class="resume-block full-width-block">
+                            <h4 class="resume-block-title">FEATURED PROJECTS</h4>
+                            <ol class="resume-ordered-projects">
+                                <li>
+                                    <strong>CredBridge AI - Alternative Credit Assessment Platform</strong>
+                                    <p>AI-powered platform analyzing digital transactions to generate explainable credit scores for vendors.</p>
+                                </li>
+                                <li>
+                                    <strong>SPYDER Event Website - IT Department Technical Symposium</strong>
+                                    <p>Official event portal with competition schedules and online participant registration.</p>
+                                </li>
+                                <li>
+                                    <strong>GhostWipe - Secure Data Wiping &amp; Sanitization System</strong>
+                                    <p>Data protection utility focused on secure forensic wiping and sensitive data destruction concepts.</p>
+                                </li>
+                                <li>
+                                    <strong>Personal Portfolio Website</strong>
+                                    <p>Modern, responsive developer portfolio showcasing technical projects, skills, and background.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-pill">Get In Touch</span>
+                    <h2 class="section-heading">LET'S BUILD SOMETHING TOGETHER.</h2>
+                    <p class="section-desc">
+                        I'm always interested in connecting with developers, recruiters, and professionals working on innovative technology projects. Feel free to contact me regarding internships, collaborations, freelance opportunities, or technical projects.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Info Column -->
+                    <div class="contact-info-col">
+                        <!-- Direct Gmail Card -->
+                        <div class="contact-method-card">
+                            <div class="method-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">Gmail</span>
+                                <a href="mailto:pravinthn008@gmail.com" class="method-link">pravinthn008@gmail.com</a>
+                                <button class="btn-copy-chip" id="copyEmailBtn" title="Copy email address">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                    <span>Copy Email</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- LinkedIn Profile Card -->
+                        <div class="contact-method-card">
+                            <div class="method-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/pravinth-n-a29592401/" target="_blank" rel="noopener noreferrer" class="method-link">linkedin.com/in/pravinth-n-a29592401/</a>
+                                <span class="method-subtext">Open in new tab &nearr;</span>
+                            </div>
+                        </div>
+
+                        <!-- GitHub Profile Card -->
+                        <div class="contact-method-card">
+                            <div class="method-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">GitHub</span>
+                                <a href="https://github.com/pravinthpravinth040-cpu" target="_blank" rel="noopener noreferrer" class="method-link">github.com/pravinthpravinth040-cpu</a>
+                                <span class="method-subtext">Open in new tab &nearr;</span>
+                            </div>
+                        </div>
+
+                        <!-- Location & Status Card -->
+                        <div class="contact-method-card">
+                            <div class="method-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">Location</span>
+                                <span class="method-text">Coimbatore, Tamil Nadu, India</span>
+                                <span class="method-subtext">Open to Remote &amp; In-Office Internships</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Column -->
+                    <div class="contact-form-col">
+                        <form class="contact-form" id="contactForm" novalidate>
+                            <h3 class="form-heading">Send a Direct Message</h3>
+
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="contactName">Full Name <span class="required">*</span></label>
+                                    <input type="text" id="contactName" name="name" class="input-control" placeholder="e.g. Alex Carter" required>
+                                    <span class="error-msg" id="nameError">Please enter your full name</span>
+                                </div>
+                                <div class="form-field">
+                                    <label for="contactEmail">Email Address <span class="required">*</span></label>
+                                    <input type="email" id="contactEmail" name="email" class="input-control" placeholder="name@company.com" required>
+                                    <span class="error-msg" id="emailError">Please enter a valid email address</span>
+                                </div>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="contactSubject">Subject <span class="required">*</span></label>
+                                <input type="text" id="contactSubject" name="subject" class="input-control" placeholder="AI Engineer Internship / Project Collaboration" required>
+                                <span class="error-msg" id="subjectError">Please provide a message subject</span>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="contactMessage">Message <span class="required">*</span></label>
+                                <textarea id="contactMessage" name="message" class="input-control textarea-control" rows="5" placeholder="Share details about the role, project, or opportunity..." required></textarea>
+                                <span class="error-msg" id="messageError">Please enter your message (at least 10 characters)</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="submitFormBtn">
+                                <span class="btn-text">Send Message</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 15. Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <a href="#home" class="logo">
+                    <span class="logo-symbol">&lt;</span><span class="logo-name">Pravinth</span><span class="logo-role">.ai</span><span class="logo-symbol">/&gt;</span>
+                </a>
+                <p class="footer-credit">Designed &amp; Developed by Pravinth N.</p>
+                
+                <!-- Footer Social Icons: GitHub, LinkedIn, Gmail -->
+                <div class="footer-social-links">
+                    <a href="https://github.com/pravinthpravinth040-cpu" target="_blank" rel="noopener noreferrer" class="footer-icon-btn" aria-label="GitHub Profile" title="GitHub: pravinthpravinth040-cpu">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pravinth-n-a29592401/" target="_blank" rel="noopener noreferrer" class="footer-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn: pravinth-n-a29592401">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="mailto:pravinthn008@gmail.com" class="footer-icon-btn" aria-label="Email Pravinth N" title="Gmail: pravinthn008@gmail.com">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Copyright &copy; 2026 Pravinth N. All Rights Reserved.</p>
+                <p class="footer-subtext">Hindusthan College of Arts and Science &bull; Coimbatore, Tamil Nadu, India</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 16. Floating Ambient Music Player & Station -->
+    <aside class="ambient-music-dock" id="musicDock" aria-label="Ambient Music Player">
+        <!-- Floating Toggle Pill (when minimized) -->
+        <button class="music-dock-pill" id="musicDockToggle" aria-label="Toggle Music Player" title="Open Ambient Music Station">
+            <span class="music-pill-anim-icon">
+                <span class="pill-bar b1"></span>
+                <span class="pill-bar b2"></span>
+                <span class="pill-bar b3"></span>
+            </span>
+            <span class="music-pill-label" id="musicDockStatus">Music: Off</span>
+        </button>
+
+        <!-- Main Music Player Card -->
+        <div class="music-player-card" id="musicPlayerCard">
+            <!-- Header bar with minimize and playlist toggle -->
+            <div class="player-top-bar">
+                <div class="player-station-tag">
+                    <span class="live-dot" id="liveDotIndicator"></span>
+                    <span class="station-label-text">AMBIENT CODING RADIO</span>
+                </div>
+                <div class="player-bar-actions">
+                    <button class="player-mini-btn" id="playlistToggleBtn" title="Playlist / Songs" aria-label="View all songs">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+                        <span class="playlist-count-badge" id="playlistBadge">4</span>
+                    </button>
+                    <button class="player-mini-btn" id="minimizePlayerBtn" title="Minimize player" aria-label="Minimize player">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Current Track Display -->
+            <div class="current-track-row">
+                <div class="track-artwork-disk" id="diskArtwork" title="Soundtrack vinyl">
+                    <span class="disk-grooves"></span>
+                    <span class="disk-center"></span>
+                </div>
+                <div class="track-info">
+                    <div class="track-title-wrap">
+                        <h4 class="track-name" id="currentTrackTitle">Lofi Coding Chill</h4>
+                    </div>
+                    <p class="track-genre" id="currentTrackGenre">Lofi Beats &bull; 75 BPM Rhodes</p>
+                    <div class="track-timer-row">
+                        <span class="timer-digits" id="currentTime">0:00</span>
+                        <div class="track-progress-bar-wrap" id="progressBarWrap" title="Seek track">
+                            <div class="track-progress-fill" id="progressFill"></div>
+                        </div>
+                        <span class="timer-digits" id="totalDuration">0:25</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soundwave Audio Visualizer -->
+            <div class="music-visualizer" id="musicVisualizer" aria-hidden="true">
+                <span class="v-bar"></span>
+                <span class="v-bar"></span>
+                <span class="v-bar"></span>
+                <span class="v-bar"></span>
+                <span class="v-bar"></span>
+                <span class="v-bar"></span>
+                <span class="v-bar"></span>
+                <span class="v-bar"></span>
+                <span class="v-bar"></span>
+                <span class="v-bar"></span>
+                <span class="v-bar"></span>
+                <span class="v-bar"></span>
+                <span class="v-bar"></span>
+                <span class="v-bar"></span>
+                <span class="v-bar"></span>
+                <span class="v-bar"></span>
+            </div>
+
+            <!-- Playback Controls -->
+            <div class="player-controls-row">
+                <button class="ctrl-btn" id="prevTrackBtn" aria-label="Previous track" title="Previous Track">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><polygon points="19 20 9 12 19 4 19 20"></polygon><line x1="5" y1="19" x2="5" y2="5" stroke="currentColor" stroke-width="2.5"></line></svg>
+                </button>
+                
+                <button class="ctrl-btn ctrl-play-main" id="playPauseBtn" aria-label="Play or Pause" title="Play / Pause">
+                    <svg class="play-icon" id="playIconSvg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    <svg class="pause-icon" id="pauseIconSvg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+                </button>
+
+                <button class="ctrl-btn" id="nextTrackBtn" aria-label="Next track" title="Next Track">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 4 15 12 5 20 5 4"></polygon><line x1="19" y1="5" x2="19" y2="19" stroke="currentColor" stroke-width="2.5"></line></svg>
+                </button>
+
+                <div class="volume-slider-group">
+                    <button class="vol-btn" id="volumeMuteBtn" title="Mute / Unmute" aria-label="Volume Mute">
+                        <svg class="vol-icon" id="volIconSvg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                    </button>
+                    <input type="range" id="volumeSlider" min="0" max="1" step="0.05" value="0.75" class="vol-range" aria-label="Volume slider">
+                </div>
+            </div>
+
+            <!-- Slide-down Playlist Drawer (Curated Songs) -->
+            <div class="playlist-drawer" id="playlistDrawer">
+                <div class="playlist-drawer-header">
+                    <span>SELECT A SOUNDTRACK</span>
+                    <button class="playlist-close-btn" id="playlistCloseBtn" aria-label="Close playlist">&times;</button>
+                </div>
+                <div class="playlist-items-list" id="playlistItems">
+                    <button class="song-card-item active" data-track-index="0">
+                        <div class="song-item-idx">01</div>
+                        <div class="song-item-meta">
+                            <span class="song-item-title">Lofi Coding Chill</span>
+                            <span class="song-item-desc">Warm electric piano chords &amp; mellow 75 BPM rhythm</span>
+                        </div>
+                        <span class="song-item-status">Active</span>
+                    </button>
+                    <button class="song-card-item" data-track-index="1">
+                        <div class="song-item-idx">02</div>
+                        <div class="song-item-meta">
+                            <span class="song-item-title">Cyberpunk Synthwave</span>
+                            <span class="song-item-desc">Pulsing arpeggio bassline &amp; 80s neon future vibes</span>
+                        </div>
+                        <span class="song-item-duration">110 BPM</span>
+                    </button>
+                    <button class="song-card-item" data-track-index="2">
+                        <div class="song-item-idx">03</div>
+                        <div class="song-item-meta">
+                            <span class="song-item-title">Deep Focus 432Hz</span>
+                            <span class="song-item-desc">Binaural alpha harmonic drone for deep problem solving</span>
+                        </div>
+                        <span class="song-item-duration">432 Hz</span>
+                    </button>
+                    <button class="song-card-item" data-track-index="3">
+                        <div class="song-item-idx">04</div>
+                        <div class="song-item-meta">
+                            <span class="song-item-title">AI Studio Flow</span>
+                            <span class="song-item-desc">Uplifting modern tech arpeggiator &amp; steady rhythm</span>
+                        </div>
+                        <span class="song-item-duration">120 BPM</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <!-- Quick Project Details Modal -->
+    <div class="modal" id="projectModal" aria-hidden="true" role="dialog">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-box">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+            <h3 class="modal-title" id="modalTitle">Project Title</h3>
+            <p class="modal-desc" id="modalDesc">Detailed description...</p>
+            <div class="modal-actions">
+                <a href="#contact" class="btn btn-primary" id="modalContactBtn">Discuss Project</a>
+                <button class="btn btn-secondary" id="modalDismissBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
